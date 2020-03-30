@@ -16,7 +16,7 @@ const Home = () => {
           sekian banyak website penyedia info perkembangan virus corona. Info
           selengkapnya, baca{" "}
           <Link to="about" className="alert-link">
-            tentang kepo korona
+            tentang kepo corona
           </Link>
           .
         </Alert>
