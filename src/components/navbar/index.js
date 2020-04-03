@@ -15,9 +15,6 @@ const Navigationbar = () => {
             <Link to="/" className="nav-link mx-2 text-dark">
               Beranda
             </Link>
-            <Link to="/news" className="nav-link mx-2 text-dark">
-              Berita
-            </Link>
             <Link to="/about" className="nav-link mx-2 text-dark">
               Tentang
             </Link>
