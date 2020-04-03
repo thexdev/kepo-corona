@@ -4,7 +4,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 
 const Navigationbar = () => {
   return (
-    <Navbar variant="dark" expand="lg">
+    <Navbar variant="dark" expand="lg" sticky="top">
       <Container>
         <Link to="/" className="navbar-brand">
           Kepo Corona
