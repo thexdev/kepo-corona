@@ -12,10 +12,10 @@ const Navigationbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Link to="/" className="nav-link mx-2 text-dark">
+            <Link to="/" className="nav-link mx-2">
               Beranda
             </Link>
-            <Link to="/about" className="nav-link mx-2 text-dark">
+            <Link to="/about" className="nav-link mx-2">
               Tentang
             </Link>
           </Nav>
