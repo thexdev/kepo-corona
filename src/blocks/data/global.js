@@ -2,7 +2,7 @@ import React, { useEffect, useState, memo } from "react";
 import axios from "axios";
 import { Col, Row, Table } from "react-bootstrap";
 
-const GlobalProvince = () => {
+const DataGlobal = () => {
   const [korban, setKorban] = useState([]);
 
   useEffect(() => {
@@ -47,4 +47,4 @@ const GlobalProvince = () => {
   );
 };
 
-export default memo(GlobalProvince);
+export default memo(DataGlobal);
