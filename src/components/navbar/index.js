@@ -4,7 +4,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 
 const Navigationbar = () => {
   return (
-    <Navbar variant="dark" expand="lg">
+    <Navbar variant="dark" expand="lg" sticky="top">
       <Container>
         <Link to="/" className="navbar-brand">
           Kepo Corona
@@ -12,13 +12,10 @@ const Navigationbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Link to="/" className="nav-link mx-2 text-dark">
+            <Link to="/" className="nav-link mx-2">
               Beranda
             </Link>
-            <Link to="/news" className="nav-link mx-2 text-dark">
-              Berita
-            </Link>
-            <Link to="/about" className="nav-link mx-2 text-dark">
+            <Link to="/about" className="nav-link mx-2">
               Tentang
             </Link>
           </Nav>

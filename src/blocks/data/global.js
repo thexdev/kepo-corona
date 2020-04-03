@@ -2,8 +2,10 @@ import React, { useEffect, useState, memo } from "react";
 import axios from "axios";
 import { Col, Row, Table } from "react-bootstrap";
 
-const GlobalProvince = () => {
+const DataGlobal = () => {
   const [korban, setKorban] = useState([]);
+
+  const formatNumber = num => String(num).replace(/(.)(?=(\d{3})+$)/g, "$1,");
 
   useEffect(() => {
     axios
@@ -35,9 +37,9 @@ const GlobalProvince = () => {
               <tr key={item.attributes.OBJECTID}>
                 <td>{index + 1}</td>
                 <td>{item.attributes.Country_Region}</td>
-                <td>{item.attributes.Confirmed}</td>
-                <td>{item.attributes.Recovered}</td>
-                <td>{item.attributes.Deaths}</td>
+                <td>{formatNumber(item.attributes.Confirmed)}</td>
+                <td>{formatNumber(item.attributes.Recovered)}</td>
+                <td>{formatNumber(item.attributes.Deaths)}</td>
               </tr>
             ))}
           </tbody>
@@ -47,4 +49,4 @@ const GlobalProvince = () => {
   );
 };
 
-export default memo(GlobalProvince);
+export default memo(DataGlobal);
